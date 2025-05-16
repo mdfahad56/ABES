@@ -1,0 +1,44 @@
+button {
+    background-color: rgb(246, 224, 185);
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    
+}
+
+table{
+    height:350px;
+    width: 350px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 5px 5px ;
+    opacity:1;
+   
+
+}
+.screen{
+    height: 95%;
+    width: 97%;
+    font-size: larger;
+   
+}
+
+caption{
+    font-size: larger;
+    font-weight: 700;
+    color: rgb(32, 34, 34);
+}
+h3{
+    font-size: medium;
+    font-weight: 700;
+    color: rgb(130, 159, 159);
+}
+
+#res{
+      font-size: larger;
+      font-weight: bolder;
+      color: rgb(38, 146, 240);
+
+     
+     
+
+}

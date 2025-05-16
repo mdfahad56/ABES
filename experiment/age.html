@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="age.css">
+</head>
+<body>
+    <div class="AgeCalculator">
+        <h1>Age Calculator</h1>
+        <h4>Today's Date</h4>
+        <div class="Todays-date">
+            <span id="day">00</span>
+            <span>-</span>
+            <span id="month">00</span>
+            <span>-</span>
+            <span id="year">00</span>
+        </div>
+        <h4>Enter Your DOB</h4>
+        <div class="dob">
+            <input type="date" id="dob">
+        </div>
+
+        <div class="result">Result</div>
+    </div>
+</body>
+<script>
+    let day = document.getElementById("day");
+    let month = document.getElementById("month");
+    let year = document.getElementById("year");
+
+    setInterval(() => {
+        let currentTime = new Date();
+        day.innerHTML = String(currentTime.getDate()).padStart(2, '0'); // Get day of the month
+        month.innerHTML = String(currentTime.getMonth() + 1).padStart(2, '0'); // Get month (0-based)
+        year.innerHTML = currentTime.getFullYear(); // Get year
+    }, 1000);
+</script>
+</html>
